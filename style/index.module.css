@@ -1,3 +1,173 @@
-.ogitupak {
-    
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0);
+
+  z-index: 999;
+  padding: 18px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menuBtn svg {
+  width: 34px;  /* sebelumnya kecil */
+  height: 28px;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuBtn svg rect {
+  fill: white;
+}
+
+.logoContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logoContainer img {
+  width: 170px;
+  height: auto;
+}
+
+.ctaBtn a {
+  padding: 14px 22px;
+  border-radius: 8px;
+  background: white;
+  font-family: 'Courier New', Courier, monospace;
+  color: #4d6e22;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #4d6e22;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ctaBtn a:hover {
+  opacity: 0.85;
+}
+
+.heroSec {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.videoWrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.videoWrap iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 180vw;
+  height: 180vh;
+
+  border: 0;
+  pointer-events: none;
+}
+
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(6, 45, 20, 0.55);
+  pointer-events: none;
+  backdrop-filter: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  padding: 120px 6% 40px 6%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  width: fit-content;
+}
+
+.heroContent h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 4vw, 56px);
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -0.02em;
+  color: #f6f6f0;
+}
+
+.primaryCta {
+  display: inline-block;
+  background: #fff;
+  color: #10350f;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  width: fit-content;
+}
+
+@media (max-width: 720px) {
+  .videoWrap iframe {
+    width: 200vh;
+    height: 120vh;
+  }
+
+  .heroContent {
+    padding-top: 90px;
+  }
+
+  .heroContent h1 {
+    font-size: clamp(22px, 6vw, 36px);
+  }
 }
