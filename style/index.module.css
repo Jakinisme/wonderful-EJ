@@ -81,6 +81,10 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .videoWrap {
@@ -119,12 +123,15 @@
   position: relative;
   z-index: 2;
   max-width: 720px;
-  padding: 120px 6% 40px 6%;
+  padding: 0 6%;
   color: #fff;
+  text-align: center;
+
   display: flex;
   flex-direction: column;
   gap: 24px;
   justify-content: center;
+  align-items: center;
 }
 
 .badge {
@@ -144,6 +151,47 @@
   margin: 0;
   letter-spacing: -0.02em;
   color: #f6f6f0;
+}
+
+.message {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f6f6f0;
+  background: rgba(255,255,255,0.12);
+  padding: 6px 14px;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 0 auto; /* center horizontal */
+  letter-spacing: 0.5px;
+}
+
+.ctaMsg {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(26px, 4vw, 54px);
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.1;
+}
+
+.ctaBtn2 {
+  background: #ffffff;
+  color: #10350f;
+  border: 2px solid #ffffff;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin: 0 auto;     /* center button */
+  display: inline-block;
+}
+
+.ctaBtn2:hover {
+  background: rgba(255,255,255,0.9);
+  transform: transl
 }
 
 .primaryCta {
