@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
 
-  background: rgba(0, 0, 0, 0);
+  background: #1f3008;
 
   z-index: 999;
   padding: 18px 0;
@@ -32,7 +32,7 @@
 }
 
 .menuBtn svg {
-  width: 34px;  /* sebelumnya kecil */
+  width: 34px; 
   height: 28px;
 }
 
