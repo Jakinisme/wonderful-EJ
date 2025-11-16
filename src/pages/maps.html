@@ -37,24 +37,41 @@
 
     <main class="main">
         <section class="mapSection">
+            <div class="videoWrap">
+                <iframe
+                    src="https://www.youtube.com/embed/fJ4jfvS5v4o?autoplay=1&mute=1&controls=0&loop=1&playlist=fJ4jfvS5v4o&rel=0&modestbranding=1&playsinline=58"
+                    title="Wonderful East Java background video"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            
+            <div class="mapOverlay"></div>
+            
             <div class="content">
-                <div class="mapContainer">
+                <div class="mapContainer" id="mapContainer">
                     <img src="../img/peta.png" class="petaImg" alt="Peta Jawa Timur">
 
-                     <div class="map-marker marker-tuban">
-                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 72" width="48" height="72" aria-hidden="false" role="img">
+                    <div class="map-area area-tuban" data-link="tuban.html" data-marker="marker-tuban"></div>
+                    <div class="map-area area-surabaya" data-link="surabaya.html" data-marker="marker-surabaya"></div>
+
+                     <div class="map-marker marker-tuban" data-link="tuban.html">
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 72" width="48" height="72" aria-hidden="false" role="img" class="marker-svg">
                          <path d="M24 4C15.2 4 8 11.2 8 20c0 8.8 10.7 23.2 16 34 5.3-10.8 16-25.2 16-34 0-8.8-7.2-16-16-16z"
-                               fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                         <circle cx="24" cy="20" r="6" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+                               fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="marker-path"/>
+                         <circle cx="24" cy="20" r="6" fill="none" stroke="#2b2b2b" stroke-width="2" class="marker-circle"/>
                        </svg>
+                       <span class="marker-label">Tuban</span>
                     </div>
                                         
-                      <div class="map-marker marker-surabaya">
-                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 72" width="48" height="72" aria-hidden="false" role="img">
+                      <div class="map-marker marker-surabaya" data-link="surabaya.html">
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 72" width="48" height="72" aria-hidden="false" role="img" class="marker-svg">
                          <path d="M24 4C15.2 4 8 11.2 8 20c0 8.8 10.7 23.2 16 34 5.3-10.8 16-25.2 16-34 0-8.8-7.2-16-16-16z"
-                               fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                         <circle cx="24" cy="20" r="6" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+                               fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="marker-path"/>
+                         <circle cx="24" cy="20" r="6" fill="none" stroke="#2b2b2b" stroke-width="2" class="marker-circle"/>
                        </svg>
+                       <span class="marker-label">Surabaya</span>
                      </div>
                 </div>
             </div>
@@ -121,5 +138,6 @@
     </main>
 
     <script src="../script/menu.js"></script>
+    <script src="../script/map.js"></script>
 </body>
 </html>

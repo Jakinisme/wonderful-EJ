@@ -1,4 +1,4 @@
-/* Hero Section - Video Background like index.html */
+
 .hero {
   position: relative;
   width: 100%;
@@ -98,9 +98,8 @@
   text-decoration: none;
 }
 
-/* Wisata Section - White/Bone Background */
 .wisata {
-  background-color: #f5f5f0; /* Bone/off-white color */
+  background-color: #f5f5f0; 
   padding: 80px 0;
   width: 100%;
 }
@@ -197,9 +196,8 @@
   text-decoration: none;
 }
 
-/* Kuliner Section - Green Background like Header */
 .kuliner {
-  background-color: #1a4d2e; /* Same green as header */
+  background-color: #1a4d2e; 
   padding: 80px 0;
   width: 100%;
 }
@@ -275,6 +273,26 @@
   color: #f5f5f0;
   line-height: 1.6;
 }
+
+.kulinerItem button {
+    background: #f5f5f0;
+    color: #000000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .kulinerItem button:hover {
+    background: #ffffff;
+  }
+  
+  .kulinerItem button a {
+    color: #000000;
+    text-decoration: none;
+  }
 
 /* Main container spacing */
 .main {
