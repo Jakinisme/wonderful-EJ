@@ -190,7 +190,7 @@
   height: 22px;
 }
 
-/* Prevent body scroll when modal is open */
+
 body.modalOpen {
   overflow: hidden;
 }
