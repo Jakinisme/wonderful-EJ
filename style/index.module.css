@@ -31,7 +31,7 @@
 }
 
 .menuBtn svg {
-  width: 34px;  /* sebelumnya kecil */
+  width: 34px;  
   height: 28px;
 }
 
@@ -160,7 +160,7 @@
   padding: 6px 14px;
   border-radius: 12px;
   width: fit-content;
-  margin: 0 auto; /* center horizontal */
+  margin: 0 auto;
   letter-spacing: 0.5px;
 }
 
@@ -184,7 +184,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: 0.25s ease;
-  margin: 0 auto;     /* center button */
+  margin: 0 auto; 
   display: inline-block;
 }
 

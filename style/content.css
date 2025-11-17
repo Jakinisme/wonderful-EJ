@@ -293,13 +293,11 @@
     color: #000000;
     text-decoration: none;
   }
-
-/* Main container spacing */
+  
 .main {
-  padding-top: 80px; /* Account for fixed header */
+  padding-top: 80px; 
 }
 
-/* Responsive Design */
 @media (max-width: 720px) {
   .videoWrap iframe {
     width: 200vh;
