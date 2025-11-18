@@ -63,6 +63,7 @@
   font-family: 'Courier New', Courier, monospace;
   color: #4d6e22;
   font-weight: 600;
+  font-size: clamp(12px, 1.8vw, 16px);
   text-decoration: none;
   border: 2px solid #4d6e22;
   transition: 0.2s;

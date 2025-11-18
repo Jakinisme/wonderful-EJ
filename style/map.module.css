@@ -189,6 +189,85 @@
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width: 1400px) {
+  .mapSection .content {
+    max-width: 1200px;
+  }
+
+  .mapContainer {
+    max-width: 1200px;
+    height: 720px;
+  }
+
+  .map-marker {
+    width: 42px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mapSection {
+    padding: 110px 0 32px;
+  }
+
+  .mapSection .content {
+    padding: 0 24px;
+  }
+
+  .mapContainer {
+    width: 95%;
+    height: 640px;
+  }
+
+  .map-marker {
+    width: 40px;
+  }
+
+  .marker-label {
+    font-size: 11px;
+    padding: 2px 4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mapSection {
+    padding: 96px 0 28px;
+  }
+
+  .mapContainer {
+    height: 520px;
+    border-radius: 14px;
+  }
+
+  .videoWrap iframe {
+    width: 190vw;
+    height: 150vh;
+  }
+
+  .marker-tuban {
+    top: 23%;
+    left: 22%;
+  }
+
+  .marker-surabaya {
+    top: 30%;
+    left: 42%;
+  }
+
+  .area-tuban {
+    top: 18%;
+    left: 17%;
+    width: 16%;
+    height: 16%;
+  }
+
+  .area-surabaya {
+    top: 27%;
+    left: 37%;
+    width: 14%;
+    height: 12%;
+  }
+}
+
 @media (max-width: 720px) {
   .videoWrap iframe {
     width: 200vh;
@@ -230,5 +309,70 @@
 
   .mapSection .content {
     padding: 0 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .mapSection {
+    padding: 80px 0 24px;
+  }
+
+  .mapContainer {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+  }
+
+  .marker-tuban {
+    top: 20%;
+    left: 20%;
+  }
+
+  .marker-surabaya {
+    top: 28%;
+    left: 42%;
+  }
+
+  .videoWrap iframe {
+    width: 220vw;
+    height: 140vh;
+  }
+
+  .map-marker {
+    width: 32px;
+  }
+
+  .marker-label {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mapSection {
+    padding: 72px 0 20px;
+  }
+
+  .mapSection .content {
+    padding: 0 12px;
+  }
+
+  .mapContainer {
+    height: 360px;
+  }
+
+  .area-tuban,
+  .area-surabaya {
+    width: 22%;
+    height: 20%;
+  }
+
+  .marker-tuban {
+    top: 32%;
+    left: 18%;
+  }
+
+  .marker-surabaya {
+    top: 38%;
+    left: 40%;
   }
 }
