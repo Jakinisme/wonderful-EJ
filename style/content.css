@@ -283,6 +283,26 @@
   padding-top: 80px; 
 }
 
+[data-observe] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+[data-observe].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-observe] {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
 @media (max-width: 720px) {
   .videoWrap iframe {
     width: 200vh;
